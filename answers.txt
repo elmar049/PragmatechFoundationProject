@@ -1,0 +1,53 @@
+display:inline-block - ilk yaranan box (<div>), o soldan saga butun yeri zept etdiyi ucun, ve onun ucunde novbeti yaranan bloc, onun awagisinda olur
+bu tag yaranan box-larin arda arda duzlushe komek edir. Width and Height can be set.
+
+display:inline - it can use as much place as needed. Weight and height cant be set. And it is used with tags as: A, SPAN, BUTTON, IMG
+
+EXAMPLE:
+<div>BLOCK</div> 
+<div>BLOCK</div> 
+<div>BLOCK</div>   (it would be as block
+                                   block
+                                   block)
+
+<span>blobk</span>
+<span>blobk</span>  (it would be as block block block)
+<span>blobk</span>
+
+
+display:table - it is needed to make of table from divisions
+
+
+Display: grid and flix: helps works with grids which made from horizontal and vertical. IN grid we can adjust boths of them, but in flex we can adjust or horizontal or verticl lines.
+
+
+
+
+cavab:
+margin top 30px
+margin bottom 20px
+margin left 20px
+margin right 25px
+
+
+1in = 2.54cm = 25.4mm = 72pt = 6pc - it is absolute length, which means it is the same on display, paper and phone.
+but there is also relative one.The em and ex units depend on the font and may be different for each element in the document. The em is simply the font size. In an element with a 2in font, 1em thus means 2in. 
+Expressing sizes, such as margins and paddings, in em means they are related to the font size, and if the user has a big font (e.g., on a big screen) or a small font (e.g., on a handheld device), the sizes will be in proportion.
+The px unit is the magic unit of CSS.
+
+
+
+section- 
+<section> means that the content inside is grouped (i.e. relates to a single theme), and should appear as an entry in an outline of the page. 
+<div> , on the other hand, does not convey any meaning, aside from any found in its class , lang and title attributes
+
+
+main - The tag in HTML represents the central topic or core content of the document body. It is a semantic and structural element introduced in HTML5.
+
+
+Articlee - The HTML <article> tag defines an independent self-contained content in a document, page, application or a site.
+The article tag content makes sense on its own. It is independent and complete from other content shown on the page. 
+This tag is generally used on Forum post, Blog post, News story, comment etc.
+
+
+aside -  The <aside> tag defines some content aside from the content it is placed in.
