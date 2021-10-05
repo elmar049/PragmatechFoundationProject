@@ -1,0 +1,56 @@
+ .head {
+     border: 1px black solid;
+     margin-bottom: 30px;
+     width: 100%;
+     height: 50px;
+ }
+ 
+ .head ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+ }
+ 
+ .iteam {
+     border: 1px black solid;
+     width: 250px;
+     height: 450px;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+ 
+ .iteam img {
+     width: 100%;
+     height: 46%;
+ }
+ 
+ .iteam p {
+     padding: 10px;
+     background-color: yellow;
+ }
+ 
+ .iteam button {
+     color: white;
+     padding: 10px;
+     margin-left: 90px;
+     margin-top: 30px;
+     background-color: violet;
+ }
+ 
+ .col-6 p {
+     height: 50px;
+     width: 50%;
+     margin-right: 20px;
+     margin-left: 20px;
+     margin-top: 30px;
+ }
+ 
+ .navigation {
+     border: 1px solid green;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .text {
+     border: 1px solid black;
+ }
