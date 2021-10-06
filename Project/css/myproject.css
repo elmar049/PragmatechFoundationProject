@@ -1,4 +1,4 @@
-.mainbox{
+.mainbox {
     border: 1px solid black;
     background-image: URL("../images/cover.jpg");
     height: 900px;
@@ -8,23 +8,23 @@
     background-size: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    
 }
 
-.infobox{
-    border-top: 1px solid black;;
+.infobox {
+    border-top: 1px solid black;
+    ;
     width: 100%;
     height: 150px;
-    background-color:rgba(0,0,0,0.4)
+    background-color: rgba(0, 0, 0, 0.4)
 }
-.infobox-up{
-    
-    height:80px;
+
+.infobox-up {
+    height: 80px;
     display: flex;
     justify-content: space-between;
 }
 
-.logositeright{
+.logositeright {
     width: 590px;
     padding: 10px;
     display: flex;
@@ -34,107 +34,103 @@
     color: white;
 }
 
-.logositeright h3{
+.logositeright h3 {
     font-weight: bolder;
 }
-.logosmallbox1{
 
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding-top: 10px;}
-
-.logosmallbox2{
-   
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding-top: 10px;}
-
-.logosmallbox3{
-    
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding-top: 10px;
+.logosmallbox1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
 }
 
-.logositeright i{
+.logosmallbox2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.logosmallbox3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.logositeright i {
     margin-right: 10px;
     font-size: 18px;
 }
 
-.infobox-up .logobox img{
+.infobox-up .logobox img {
     width: 115px;
     margin-top: 10px;
     height: 60px;
     opacity: 0.9;
     filter: brightness(120%);
--webkit-filter: brightness(120%);
--moz-filter: brightness(120%)
-    
+    -webkit-filter: brightness(120%);
+    -moz-filter: brightness(120%)
 }
 
-.logobox{margin-left: 10px;
-margin-top:2px;
-color: white;}
+.logobox {
+    margin-left: 10px;
+    margin-top: 2px;
+    color: white;
+}
 
-.infobox-down{display: flex;
-flex-direction: row;
-justify-content: space-between;
-height: 70px; }
+.infobox-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+}
 
-
-.infobox-down-left{
+.infobox-down-left {
     display: flex;
     flex-direction: row;
     padding-top: 15px;
     justify-content: space-around;
     margin-top: 10px;
-
 }
 
-
-
-.infobox-down-left a{
+.infobox-down-left a {
     font-weight: bold;
     text-decoration: none;
     list-style-type: none;
     margin-left: 30px;
     color: white;
-    
-
 }
 
-.infobox-down-right{
+.infobox-down-right {
     display: flex;
     flex-direction: row;
     width: 350px;
     justify-content: space-between;
     padding-top: 15px;
     margin-top: 10px;
-    
 }
-.infobox-down-right i{
+
+.infobox-down-right i {
     font-size: 30px;
     color: white;
 }
 
-.infobox-down-right option{
+.infobox-down-right option {
     background-color: hotpink;
-
 }
 
-.infobox-down-right button{
+.infobox-down-right button {
     border-radius: 10px;
     background-color: burlywood;
-    padding:5px 5px;
+    padding: 5px 5px;
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: bold;
 }
 
-.textbox{
+.textbox {
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -142,129 +138,124 @@ height: 70px; }
     justify-content: center;
 }
 
-.text{
+.text {
     width: 600px;
     height: 400px;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     color: white;
     text-align: center;
     color: rgba(rgb(19, 17, 17), green, blue, 0.9);
-
-
-}
-.text span{
-font-size: 2.3em;
-font-weight: bold;
-color: orangered;
-margin-left: 90px;
-text-align: center;
-text-shadow: tomato;
-;
-
 }
 
-.text h1{
+.text span {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: orangered;
+    margin-left: 90px;
+    text-align: center;
+    text-shadow: tomato;
+    ;
+}
+
+.text h1 {
     font-size: 3.5em;
-font-weight: bolder;
-color: orange;
-margin-top: 30px;
-margin-bottom: 30px;
+    font-weight: bolder;
+    color: orange;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.text h3{
+.text h3 {
     font-size: 2.3em;
     font-weight: inherit;
     color: black;
 }
-.text button{
+
+.text button {
     padding: 1px 10px;
     margin-left: 250px;
     margin-top: 30px;
     font-size: 1.5em;
 }
 
+
 /* second page */
 
-.mainbox2{
-    
-    background-color: thistle;
+.main {
+    margin-top: 100px;
+}
+
+.mainbox2 {
     position: relative;
-    
-    
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
 }
 
-
-.text2{
-    border: 1px solid black;
+.text2 {
     width: 400px;
-    height: 500px;
-    background-color: violet;
-    
-    
+    height: 441px;
+    margin-top: 36px
 }
 
-
-
-.text2 h1{
-    color: white;
+.text2 h1 {
+    color: black;
     font-size: 30px;
     font-weight: bold;
+    padding: 10px;
 }
 
-.text2 p{
-    color: white;
+.text2 p {
+    color: black;
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
-
+    padding: 10px;
+    font-weight: 700;
 }
 
-.text2 button{
+.text2 button {
     background-color: white;
     color: black;
     padding: 10px 1px;
     margin-top: 10px;
-}
-.imagesbox{
-   border: 1px solid black;
-   background-color: yellow;
-   width: 810px;
-   height: 500px;
-   position: absolute;
-
+    margin-left: 10px;
+    font-weight: 700;
 }
 
+.imagesbox {
+    width: 810px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 440px;
+}
 
-    
-
-
-.photo1{
+.photo1 {
     width: 400px;
     height: 460px;
     position: absolute;
     z-index: 2;
     top: 23px;
     left: 55px;
-    box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.41)
-   
-
+    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.41)
 }
-.photo2{
+
+.photo2 {
     width: 419px;
     height: 379px;
     position: absolute;
     z-index: 1;
     left: 388px;
     top: 60px;
-
-
 }
-.label{
+
+.label {
     background: #966528;
     border-radius: 8px;
-    box-shadow: 6px -5px 4px 0px rgba(0,0,0,0.41);
+    box-shadow: 6px -5px 4px 0px rgba(0, 0, 0, 0.41);
     width: 100px;
     height: 80px;
     text-align: center;
@@ -273,17 +264,210 @@ margin-bottom: 30px;
     position: absolute;
     z-index: 3;
     left: 0;
-    top:310px;
+    top: 310px;
 }
 
-.imagesbox .photo1 img{
+.imagesbox .photo1 img {
     border-radius: 2px;
     width: 100%;
     height: 100%;
 }
 
-.imagesbox .photo2 img{
+.imagesbox .photo2 img {
     border-radius: 2px;
     width: 100%;
     height: 100%;
+}
+
+
+/* Third page */
+
+.main3 {
+    background-image: url("../images/quoto.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 900px;
+    background-size: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+}
+.quote {
+    background-color: blue;
+    display: inline-block;
+}
+.pers-info {
+    width: 345px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 25px;
+    row-gap: 20px;
+    column-gap: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.quote h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+}
+.pers-info input {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.comments {
+    margin-top: 6px;
+    width: 350px;
+    height: 115px;
+}
+.comments input {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.quote button {
+    background-color: #ffb900;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/* page 4 */
+.mainbox4 {
+    ;
+    width: 1200px;
+    margin-top: 40px;
+}
+.item4A {
+    border: 1px solid lightgrey;
+    margin-left: 25px;
+    margin-right: 6px;
+    height: 350px;
+}
+div img {
+    width: 100%;
+    height: 80%;
+}
+.mainbox4-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 15px;
+}
+.mainbox4-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 355px;
+    margin-top: 95px;
+}
+.item4A a {
+    text-decoration: none;
+    width: 100%;
+    height: 20%;
+}
+.item4A a h1 {
+    margin-left: 24px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.item4A a span {
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 25px;
+    color: grey;
+}
+.text4 span {
+    font-size: 30px;
+    font-weight: bold;
+}
+.text4 {
+    margin-left: 22px;
+    margin-bottom: 28px;
+}
+
+/* page 5 */
+.mainbox5 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.label5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgba(76, 15, 104, 0.9);
+    border-radius: 8px;
+    box-shadow: 6px -5px 4px 0px rgb(0 0 0 / 44%);
+    width: 370px;
+    height: 370px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    left: 1109px;
+    top: 140px;
+}
+.imagesbox5 {
+    right: 224px;
+    height: 670px;
+    position: relative;
+    width: 1876px;
+    z-index: 0;
+}
+.imagesbox5 img {
+    width: 100%;
+    height: 100%;
+}
+.label5 h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+}
+.label5 span {
+    font-size: 12px;
+    text-align: justify;
+    padding: 12px;
+    padding-right: 20px;
+    margin-top: 11px;
+}
+.label5 button {
+    height: 45px;
+    width: 100px;
+    margin-left: 34%;
+    margin-top: 16px;
+    font-size: 15px;
+}
+.yes {
+    border: 1px solid black;
+    width: 1200px;
+    height: 1200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.no {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    position:absolute;
 }
