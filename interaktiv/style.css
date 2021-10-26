@@ -1,0 +1,42 @@
+.main-box {
+    width: 1200px;
+    height: 1200px;
+    margin: 0px auto;
+    border: 1px solid green;
+    position: relative;
+    transition: all .5 ease;
+}
+
+.button-box {
+    margin: 0px auto;
+}
+
+.main-box button {
+    background-color: aquamarine;
+    border-color: brown;
+    border-radius: 5px;
+    margin: 8px;
+    font-size: 20px;
+}
+
+.button-box {
+    position: relative;
+    left: 40%;
+    top: 95%;
+}
+
+.box {
+    transition: all, .5, ease;
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    position: relative;
+    top: 45%;
+    left: 45%;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
