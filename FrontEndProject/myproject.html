@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,900;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/myproject.css">
     <link rel="stylesheet" href="./css/layout.css">
-
+    <script src=""></script>
 </head>
 
 <body>
@@ -22,91 +22,102 @@
     <div class="mainbox">
         <div class="infobox">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="infobox-up">
-                            <div class="logobox"><img src="images/logo.jpg" alt="">
-                                <H2>HN Construction</H2>
-                            </div>
-                            <div class="logositeright">
+                <div class="infobox-up">
+                    <div class="logobox"><img src="images/logo.jpg" alt="">
+                        <H2>HN Construction</H2>
+                    </div>
+                    <div class="logositeright">
 
-                                <div class="logosmallbox1">
+                        <div class="logosmallbox1">
 
-                                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <div>
-                                        <h3>Adress</h3><span>Gournadi, 1230 Bariasl</span></div>
-
-                                </div>
-
-
-                                <div class="logosmallbox2">
-                                    <div><i class="far fa-clock"></i></div>
-                                    <div>
-                                        <H3>Business Hours</H3><span>Office Hour: 09:00am - 4:00pm</span></div>
-
-
-                                </div>
-
-                                <div class="logosmallbox3">
-                                    <div><i class="fas fa-phone"></i></div>
-                                    <div>
-                                        <h3>Call us Today</h3><span>+994706116303</span></div>
-                                </div>
-                            </div>
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h3>Adress</h3><span>Gournadi, 1230 Bariasl</span></div>
 
                         </div>
-                        <div class="infobox-down">
-                            <div class="infobox-down-left">
-                                <a href="">
-                                    <li>Home</li>
-                                </a>
-                                <a href="">
-                                    <li>About Us</li>
-                                </a>
-                                <a href="">
-                                    <li>Services</li>
-                                </a>
-                                <a href="">
-                                    <li>Elements</li>
-                                </a>
-                                <a href="">
-                                    <li>Shop</li>
-                                </a>
-                                <a href="">
-                                    <li>Blog</li>
-                                </a>
-                                <a href="">
-                                    <li>Contact</li>
-                                </a>
-                            </div>
-                            <div class="infobox-down-right">
-                                <i><i class="fas fa-search"></i></i>
-                                <i><i class="fas fa-cart-arrow-down"></i></i>
 
-                                <form action="language"><select name="" id="">
+
+                        <div class="logosmallbox2">
+                            <div><i class="far fa-clock"></i></div>
+                            <div>
+                                <H3>Business Hours</H3><span>Office Hour: 09:00am - 4:00pm</span></div>
+
+
+                        </div>
+
+                        <div class="logosmallbox3">
+                            <div><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h3>Call us Today</h3><span>+994706116303</span></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="infobox-down">
+                    <div class="infobox-down-left">
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="">
+                            <li>About Us</li>
+                        </a>
+                        <a href="">
+                            <li>Services</li>
+                        </a>
+                        <a href="">
+                            <li>Elements</li>
+                        </a>
+                        <a href="">
+                            <li>Shop</li>
+                        </a>
+                        <a href="">
+                            <li>Blog</li>
+                        </a>
+                        <a href="">
+                            <li>Contact</li>
+                        </a>
+                    </div>
+                    <div class="infobox-down-right">
+                        <i><i class="fas fa-search"></i></i>
+                        <i><i class="fas fa-cart-arrow-down"></i></i>
+
+                        <form action="language"><select name="" id="">
                                 <option value="">English</option>
                                 <option value="">Russian</option>
                             </select>
 
-                                </form>
-                                <button type="button">Request Quote</button>
-                            </div>
-                        </div>
-
+                        </form>
+                        <button type="button">Request Quote</button>
                     </div>
                 </div>
+
+
+
             </div>
 
         </div>
 
-        <div class="text">
-            <span>Welcome to HN Construction</span>
-            <h1>BEATIFULLY CRAFTED, DESIGNED TO LAST</h1>
-            <H3>Dunyanin en yeni texnalogi ile hazirlanmis davamli ve dozumlu perillalar</H3>
-            <button class="btn">Find More</button>
+        <div class="text-group">
+            <div class="text-first-cover">
+                <span>Welcome to HN Construction</span>
+                <h1>BEATIFULLY CRAFTED, DESIGNED TO LAST</h1>
+                <H3>Dunyanin en yeni texnalogi ile hazirlanmis davamli ve dozumlu perillalar</H3>
+                <button class="btn">Find More</button>
+            </div>
+
+            <div class="text-second-cover">
+                <span>Welcome to HN Construction</span>
+                <h1>THE FUTURIS WINDOWS & DOORS</h1>
+                <H3>Dunyanin en yeni texnalogi ile hazirlanmis davamli ve dozumlu perillalar</H3>
+                <button class="btn">Find More</button>
+            </div>
         </div>
 
 
+        <div class="arrows-cover">
+            <div class="arrow-cover" onclick="leftCover()">left</div>
+            <div class="arrow-cover" onclick="rightCover()">right</div>
+        </div>
 
     </div>
 
@@ -468,6 +479,7 @@
 
     </div>
 
+    <script src="myproject.js"></script>
 </body>
 
 </html>

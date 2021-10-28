@@ -11,6 +11,7 @@ function upEle() {
 let y = 10
 
 function downEle() {
+
     let buttonOne = document.querySelector('.box');
     buttonOne.style.transform = `translate(0px,${y}px)`
     y = y + 10
