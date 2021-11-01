@@ -1,0 +1,126 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid green;
+    height: 120px;
+    background-image: url('/images/backgroudd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.header h1 {
+    margin: 35px;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 30px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul {
+    margin: 35px;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    display: flex;
+}
+
+.header ul li a {
+    color: white;
+}
+
+.text {
+    color: gray;
+    padding: 27px;
+    width: 550px;
+    position: relative;
+    top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text h4 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 50px;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+
+.text p {
+    padding: px;
+    margin: 20px;
+    font-size: 12px;
+}
+
+.main-box-contact {
+    display: flex;
+}
+
+.quote {
+    position: relative;
+    top: 40px;
+    left: 100px;
+}
+
+.pers-info {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 25px;
+    row-gap: 20px;
+    column-gap: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.quote h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+}
+
+.pers-info input {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding-left: 10px;
+    border-color: gray;
+}
+
+.comments {
+    margin-top: 6px;
+    width: 400px;
+    height: 115px;
+}
+
+.comments input {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.quote button {
+    background-color: #d4a219;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: all 0.4s ease-out;
+    width: 70px;
+}
+
+.quote button:hover {
+    background-color: #c5a277;
+    font-size: 19px;
+    width: 77px;
+}
