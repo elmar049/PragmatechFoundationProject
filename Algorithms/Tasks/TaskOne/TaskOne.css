@@ -1,0 +1,25 @@
+.box {
+    height: 600px;
+    width: 1200px;
+    box-shadow: 0 0 10px;
+    border: 1px solid green;
+    position: relative;
+    background-color: blue;
+}
+
+.box button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid red;
+    box-shadow: 0 0 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+}
+
+.box h1 {
+    font-size: 12px;
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+}
