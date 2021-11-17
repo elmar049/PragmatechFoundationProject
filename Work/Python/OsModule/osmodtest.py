@@ -71,3 +71,15 @@
 # os.remove(y)
 
 
+
+
+
+
+
+import os
+yol="C:/Users/elmar/Desktop/almapapaksi"
+x=os.path.join(yol, "salam.txt")
+file=open(x, "w")
+file.write("buda icindeki")
+file.close()                          #bu niye iwlemesin
+              
