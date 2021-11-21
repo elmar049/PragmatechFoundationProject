@@ -14,11 +14,23 @@ print(user['status']) # use the name of dict and then []
 
 ### USe While True: if we want to creat unlimited range or circles
 
+
+
+
 ### 
 x=[]
 x.append('salam')
 y=x.append('salam')
 print(y)  # nelzya vstavit v kakoy libo variable tak kak u neqo net return-a.. et void function
+
+
+
+###
+# ctobi importirovat iz druqoy PY stranici:
+# import nazmaniefaila - eto perviy sposob  OR import nazvanie fayla as X ili Y, luboy nazvanie cto ti xocesh:
+# a esli mi xotim eqo ispolzovat, to mi piwem:
+# lubayaPeremennaya= nazvaniedocumenta - tocka - i DEF kotiriy mi xotim uspolzovat
+
 
 
 ### Sual

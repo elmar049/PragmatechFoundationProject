@@ -1,10 +1,10 @@
-let x = 'Elmar Mammadov';
+let xx = 'Elmar Mammadov';
 let yeni = '';
-for (let i = 0; i < x.length; i++) {
-    if (x[i] === x[i].toLowerCase()) {
-        yeni = yeni + x[i].toUpperCase()
+for (let i = 0; i < xx.length; i++) {
+    if (xx[i] === xx[i].toLowerCase()) {
+        yeni = yeni + xx[i].toUpperCase()
     } else {
-        yeni = yeni + x[i].toLowerCase()
+        yeni = yeni + xx[i].toLowerCase()
     }
 }
 

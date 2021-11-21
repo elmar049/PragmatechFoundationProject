@@ -1,21 +1,28 @@
-NewUser=input('Yeni Istifadecini Elave etmek ucun: ')
-NewSurname=input('Zehmet olmasa soyadini qeyd edesiniz: ')
-NewId=input('Zehmet olmasa istifadecinin ID-sini qeyd edin:')
+# list=[54,9,31,3,9,75]
+# maaslar=[600,900,500,2369]
+# ages=[67,98,44,33]
+# times=[6,8,3,9,2]
 
 
 
-yeniuser={'Name':NewUser, 'Surname':NewSurname, 'ID': NewId}
-print(yeniuser)
-
-users=[yeniuser]
-users.append(yeniuser)
-print(users)
-
-
-
+# def summing (x):
+#     b=0
+#     for eded in x:
+#         b=b+eded
+#     return b
+    
+   
 
 
-# yeniuser={'Name': users.append(NewUser), 'Surname': users.append(NewSurname), 'ID': users.append(NewId)}
-# print(yeniuser)
+# xxx=summing(ages)
+# print(xxx)
 
 
+from calculation import sum
+
+s=20
+v=50
+
+y=calculation.sum(s,v)
+
+print(y)
