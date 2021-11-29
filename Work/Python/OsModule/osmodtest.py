@@ -1,5 +1,5 @@
 # import os
-# x=os.getcwd
+# x=os.getcwd()
 # print(x)                                          # it is to check the path
 
 
@@ -9,8 +9,25 @@
 
 
 # import os
-# newfolder="C:/Users/elmar/Desktop/almapapaksi"
+# newfolder="C:/Users/elmar/Desktop/mining/"
 # os.mkdir(newfolder)                               # it is  to create a folder
+
+
+
+#  OOOOOORRRRRR
+
+# import os           
+
+
+# yol=os.path.join('C:/Users/elmar/Desktop/mining/','new')
+
+
+
+# fileyol=os.path.join(yol,'data.txt')
+# file=open(fileyol,'w')
+# file.write('salam')
+
+# os.remove(fileyol)
 
 
 
@@ -40,6 +57,8 @@
 
 
                                                # FILE HANDLING
+
+                                               
 # import os           
 # yol = "C:/Users/elmar/Desktop/almapapaksi"
 # x=os.path.join(yol, "filedana.txt")            # Ya doljen zakomnetiurovat  ctob sleduwiy kod zarabotal
@@ -49,7 +68,6 @@
 
 # os.remove(x)                           #POCEMU YA NE MOGU UDALIT FILE.... NO ctob eqo udalit mi doljni imenno ukazat eqo path???
 # os.rename(yol, "newname")            # pocemu ya koqda vvoju etot kod on SOZDAET pereimennovaniy file v OSMOdule, a ne v paple kotoroyt ya xocu
-
 
 
 
@@ -76,10 +94,11 @@
 
 
 
-import os
-yol="C:/Users/elmar/Desktop/almapapaksi"
-x=os.path.join(yol, "salam.txt")
-file=open(x, "w")
-file.write("buda icindeki")
-file.close()                          #bu niye iwlemesin
+# import os
+# yol="C:/Users/elmar/Desktop/a"
+# x=os.path.join(yol, "salam.txt")
+# file=open(x, "w")
+# file.write("buda icindeki")
+# file.close()                          #bu niye iwlemesin
               
+         

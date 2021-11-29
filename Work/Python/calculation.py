@@ -1,3 +1,3 @@
-def sum(a,b):
-    return a+b
-    
+import os
+x=os.getcwd
+print(x)

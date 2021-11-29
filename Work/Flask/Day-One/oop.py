@@ -10,5 +10,5 @@ class Student:
 
 
 ilktelebe=Student('xiyar','xiyarov')
-
+# k
 print()
