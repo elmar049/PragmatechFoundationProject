@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/adding/" method='POST' enctype="multipart/form-data">
+        <input type="text" placeholder="Type the news title" name='title'>
+        <input type="text" placeholder="Type the news content" name='content'>
+        <input type="file" name="img">
+        <input type="submit" value="Send">
+    </form>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Xəbərin başlığı</th>
+                            <th scope="col">Xəbərin məzmunu</th>
+                            <th scope="col">Sil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for new in news %}
+                        <tr>
+                            <td>{{new.id}}</td>
+                            <td>{{new.title}}</td>
+                            <td>{{new.content}}</td>
+                            <td>
+                                <a href="/delete/{{new.id}}">sil</a>
+                            </td>
+                        </tr>
+
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
