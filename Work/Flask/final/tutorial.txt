@@ -1,0 +1,81 @@
+first of all: 
+1)
+pip install flask_sqlalchemy <---  (in terminal)
+
+2) from flask_sqlalchemy import SQLalchemy -- databse yaratmaq ucun (yuxarida)
+
+3) app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///final.db'  <-- posle 3ex slashev, mi pishem nazvanie DB kotoroe budet
+
+3a) db=SQLAlchemy(app)  <-- etot metod otvecaet za sozdanie teybla, i peredachu infi
+
+
+
+4) in MODULES/MODULE:
+from run import db
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    ad=db.Column(db.String(50))
+    soyad=db.Column(db.String(60))
+
+
+5) go back to RUN.py:   from Modules.module import User  
+
+    then: (in terminal) --- from run import db ---- db.create_all()
+
+
+
+
+
+
+  esli mi xotim vzyat dannie iz inputa, mi idem k tomuje rotu i piwe tam if request method POST, request form 
+  tak jetam piwem: from run import db, i from modules.module import USER
+
+  posle je tam je mi sozdajem objekt ot classa\; user=USer(ad=_ad i t.d)
+  db.session.add(user) nazvanie objetka sozdannoqo
+  db.session.commit()  eto dlya peredachi v SQL 
+
+  teper nado ctob ne v SQL gorsensin, a ekranda gorsensin data basede olan, 
+  onuncunde bir dene list yarat ; users=User.querry.all(), then users= users, and write it n thre beginning of the functiin,
+   before IF --yani tablede ne qder objet varsa (setir) yig listi icne ve goster zehmet olmaas
+
+
+
+
+
+
+   {% for user in users %}
+        <tr>
+            <th scope="row">{{user.id}}</th>
+            <td>{{user.name}}</td>
+            <td>{{user.surname}}</td>
+            <td>
+                <a href="/admin/delete/{{user.id}}">Sil</a>
+                <a href="/admin/update/{{user.id}}">Dəyişdir</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+        ve sonra users.htmlde bunu yaranda users. name surname bunlar hamsi name ve surname class(db.model-den goturulur)
+
+
+
+
+        DELETE:
+
+        <a href="/admin/delete/{{user.id}}">Sil</a>
+
+        sozdayem noviy route dlya delete. i koqda navoxim na Sil v spiske, to vnizu poyavlaetsa route... yani sile click edende bu specisif route gedecek
+
+        @app.route('/admin/delete/<int:id>')
+def admin_delete(id):
+    from models.model import User
+    user=User.query.get(id)
+    db.session.delete(user)
+    db.session.commit()
+    return redirect('/admin/users')
+
+
+
+
+
+    update:

@@ -1,0 +1,37 @@
+{% extends 'admin/base.html' %} {% block content %} h5>İstifadəçi Əlavə Et</h5>
+
+<form action="/admin/users" method='POST'>
+    <input type="text" class="form-control my-2" name='ad' placeholder="Adınız...">
+    <input type="text" class="form-control my-2" name='soyad' placeholder="Soyadınız...">
+    <input type="submit" class="btn btn-primary my-2" value='Əlavə Et'>
+</form>
+<hr>
+<h5>Bütün istifadəçilər</h5>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Ad</th>
+            <th scope="col">Soyad</th>
+            <th scope="col">Əməlyatlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <th scope="row">{{user.id}}</th>
+            <td>{{user.name}}</td>
+            <td>{{user.surname}}</td>
+            <td>
+                <a href="/admin/delete/{{user.id}}">Sil</a>
+                <a href="/admin/update/{{user.id}}">Dəyişdir</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+
+    </tbody>
+</table>
+
+
+{% endblock %}

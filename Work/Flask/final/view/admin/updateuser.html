@@ -1,0 +1,11 @@
+{% extends 'admin/base.html' %} {% block content %} h5>İstifadəçi Əlavə Et</h5>
+
+
+<h5>Update ele</h5>
+<form action="/admin/update{{user.id}}" method='POST'>
+    <input type="text" class="form-control my-2" name='ad' placeholder="Adınız..." value="{{user.name}}">
+    <input type="text" class="form-control my-2" name='soyad' placeholder="Soyadınız..." value="{{user.surname}}">
+    <input type="submit" class="btn btn-primary my-2" value='Deyish'>
+</form>
+
+{% endblock %}
