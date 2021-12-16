@@ -1,0 +1,49 @@
+{% extends "admin/base.html" %} {% block content %}
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form class="mb-5" action="/update/{{srvs.id}}" method="POST">
+                        <h2>Update blog</h2>
+                        <hr>
+                        <div class="mb-3">
+
+                            <input type="text" class="form-control" name="srvname" value="{{srvs.service_title}}" placeholder="Servis adi">
+
+                        </div>
+                        <div class="mb-3">
+
+                            <input type="text" class="form-control" name="srvcontent" value="{{srvs.service_content}}" placeholder="Servis Xsusiyeti">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Duzelish et</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+</div>
+{% endblock %}

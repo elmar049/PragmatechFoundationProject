@@ -1,0 +1,37 @@
+{% extends "admin/base.html" %} {% block content %}
+<div class="form-item">
+    <div class="container my-5">
+        <div class="row">
+            <!-- column -->
+            <div class="col-12">
+                <h2 class="text-light">Messages</h2>
+                <hr>
+                <div class="table-responsive">
+                    <table class="table text-light">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>E-mail</th>
+                                <th>Message</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for msg in mails %}
+                            <tr>
+                                <td>{{msg.id}}</td>
+                                <td>{{msg.mailname}}</td>
+                                <td>{{msg.mailsurname}}</td>
+                                <td>{{msg.mailemail}}</td>
+                                <td>{{msg.mailtext}}</td>
+                                <td><a href="/contactDelete/{{msg.id}}"><i class="far fa-trash-alt" style="color: #20C997;"></i></a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>{% endblock %}

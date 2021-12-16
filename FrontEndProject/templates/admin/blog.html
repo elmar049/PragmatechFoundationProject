@@ -1,0 +1,93 @@
+{% extends "admin/base.html" %} {% block content %}
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="container">
+            <div class="alert alert-danger alert-dismissible fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Xeberdarliq!</strong> 6 xeberden elave etmekle siz saytin strukturnu pozmush olursunuz.
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form class="mb-5" action="/admin" method="POST" enctype="multipart/form-data">
+                        <h2>Yeni servisi elave et</h2>
+                        <hr>
+                        <div class="mb-3">
+
+                            <input type="text" class="form-control" name="srvname" placeholder="Servisin adini yaz">
+
+                        </div>
+                        <div class="mb-3">
+
+                            <input type="text" class="form-control" name="srvcontent" placeholder="Servisin xusyetlerin yaz">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <input type="file" name="srvimg" class="form-control btn btn-warning">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Elave Et</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <!-- column -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Cedveli</h4>
+                        <h6 class="card-subtitle">Add blog <code>.table</code></h6>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Link</th>
+                                        <th>Update</th>
+                                        <th>Delete</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for srv in srvs %}
+                                    <tr>
+                                        <th>{{srv.id}}</th>
+                                        <td>{{srv.service_title}}</td>
+                                        <td>{{srv.service_content}}</td>
+                                        <td><a href="/admin/update/{{srv.id}}">Dəyişdir</a></td>
+                                        <td><a href="/admin/delete/{{srv.id}}">Sil</a></td>
+
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+</div>
+{% endblock %}
