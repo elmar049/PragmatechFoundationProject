@@ -1,11 +1,51 @@
 #ADMIN-ROUTES:
 
-from flask import Flask, request,render_template, redirect
-from werkzeug.utils import secure_filename
+from flask import Flask, request,render_template, redirect,url_for
+from werkzeug.utils import import_string, secure_filename
 import os
 from run import app
 from models import *
 from flask_mail import Message
+from flask_login import LoginManager, UserMixin, login_manager, login_user, login_required, logout_user, current_user
+from run import login_manager
+
+
+# Login
+@login_manager.user_loader
+def load_user(user_id):
+    from models import Login
+    return Login.query.get(int(user_id))
+
+@app.route("/login",methods=["GET","POST"])
+def admin_login():
+    from models import Login
+    from run import db
+    login = Login(
+        admin_username = "elmar",
+        admin_password = "elmar",
+        log_bool = False
+    )
+    db.session.add(login)
+    db.session.commit()
+    
+    if request.method == "POST":
+        if login.admin_username == request.form["admin_username"] and login.admin_password == request.form["admin_password"]:
+            login_user(login, remember=login.log_bool)
+            return redirect (url_for("index"))
+
+        else:
+            return redirect(url_for("admin_login"))
+
+    return render_template("admin/login.html", login = login)
+
+# Logout
+@app.route("/logout")
+@login_required
+def admin_logout():
+    logout_user()
+    return redirect (url_for("index"))
+
+
 
 
 
@@ -22,7 +62,10 @@ def contact_html():
 
 
 @app.route("/admin", methods=['POST','GET'])
+@login_required
 def index():
+    from models import Services
+    from run import db
     srvs=Services.query.all()
     if request.method=='POST':
         name=request.form['srvname']
@@ -44,6 +87,8 @@ def index():
 
 @app.route("/admin/delete/<int:id>")
 def delete(id):
+    from models import Services
+    from run import db
     srvs=Services.query.filter_by(id=id).first()
     db.session.delete(srvs)
     db.session.commit()
@@ -53,6 +98,7 @@ def delete(id):
 
 
 @app.route('/admin/update/<int:id>',methods=['GET','POST'])
+@login_required
 def admin_update(id):   
     from models import Services
     from run import db
@@ -74,8 +120,14 @@ def admin_update(id):
 
 
 
+
+
+
 @app.route("/admin/products", methods=['POST','GET'])
+@login_required
 def products():
+    from models import Products
+    from run import db
     prds=Products.query.all()
     if request.method=='POST':
         name=request.form['product_name']
@@ -97,6 +149,8 @@ def products():
 
 @app.route("/products/delete/<int:id>")
 def delete_product(id):
+    from models import Products
+    from run import db
     prds=Products.query.filter_by(id=id).first()
     db.session.delete(prds)
     db.session.commit()
@@ -105,6 +159,7 @@ def delete_product(id):
 
 
 @app.route('/products/update/<int:id>',methods=['GET','POST'])
+@login_required
 def product_update(id):   
     from models import Products
     from run import db
@@ -121,8 +176,15 @@ def product_update(id):
 
 
 
-@app.route('/admin/emails', methods=['GET','POST'])
-def admin_emails ():
+
+
+
+
+
+
+@app.route('/admin/emails', methods=["GET","POST"])
+@login_required
+def admin_emails():
     from models import Emails
     from run import db
     import smtplib    
@@ -141,7 +203,7 @@ def admin_emails ():
             mailsurname = mailsurname,
             mailemail = mailemail,
             mailnumber= mailnumber,
-            mailtext= mailtext
+            mailtext= mailtext,
         )
         myGmail = "dlyamusic999@gmail.com"
         msg = Message(mailtext,sender = mailemail, recipients = [myGmail])
@@ -149,8 +211,23 @@ def admin_emails ():
         db.session.add(mails)
         db.session.commit()
         return redirect ("/")
-    return render_template("/admin/emails.html", mails=mails)
+    return render_template("admin/emails.html", mails=mails)
+
+
+
+
+@app.route("/emails/delete/<int:id>")
+def delete_email(id):
+    from models import Emails
+    from run import db
+    mls=Emails.query.filter_by(id=id).first()
+    db.session.delete(mls)
+    db.session.commit()
+    return redirect("/admin/emails")
+
         
+
+
 
 
 
