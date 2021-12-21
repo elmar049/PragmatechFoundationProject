@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "install",
+			"path": "static/admin/assets/",
+			"problemMatcher": [],
+			"label": "npm: install - static/admin/assets",
+			"detail": "install dependencies from package"
+		}
+	]
+}
